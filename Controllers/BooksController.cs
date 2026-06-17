@@ -7,7 +7,9 @@ namespace BookApi.Controllers {
     public class BooksController : ControllerBase {
         private static readonly List<Book> _books = new() {
             new Book { Id = 1, Title = "C# Basics", Author = "Soeurng LIM", Price = 15.50m },
-            new Book { Id = 2, Title = "ASP.NET API", Author = "Developer", Price = 25.00m }
+            new Book { Id = 2, Title = "ASP.NET API", Author = "Developer", Price = 25.00m },
+            new Book { Id = 3, Title = "Entity Framework Core", Author = "Soeurng LIM", Price = 30.00m },
+            new Book { Id = 4, Title = "Blazor WebAssembly", Author = "Developer", Price = 20.00m }
         };
 
         [HttpGet]
